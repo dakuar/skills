@@ -1,0 +1,14 @@
+{
+  "name": "dakuar-skills",
+  "description": "Skills para agentes de código: redacción técnica en Español Técnico Simplificado.",
+  "owner": {
+    "name": "dakuar"
+  },
+  "plugins": [
+    {
+      "name": "dakuar-skills",
+      "source": "./",
+      "description": "Skills para agentes de código: redacción técnica en Español Técnico Simplificado."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "dakuar-skills",
+  "description": "Skills para agentes de código: redacción técnica en Español Técnico Simplificado.",
+  "version": "1.0.0",
+  "author": {
+    "name": "dakuar"
+  },
+  "repository": "https://github.com/dakuar/skills"
+}
