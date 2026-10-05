@@ -32,6 +32,7 @@ npx skills add dakuar/skills
 │       │   └── openai.yaml
 │       └── SKILL.md
 ├── .gitattributes
+├── LICENSE
 ├── opencode.json
 └── README.md
 ```
@@ -48,3 +49,7 @@ npx skills add dakuar/skills
 3. Crea `skills/<nombre>/agents/openai.yaml` con `display_name` y `short_description`.
 4. Agrega el skill a la lista "Skills disponibles" de este archivo.
 5. Incrementa `version` en `.claude-plugin/plugin.json`. Claude Code compara ese número para detectar una actualización del plugin.
+
+## Licencia
+
+Este repositorio usa la licencia MIT. Lee el texto completo en [LICENSE](LICENSE).
