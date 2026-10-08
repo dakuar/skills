@@ -1,0 +1,3 @@
+interface:
+  display_name: "Docs Audit"
+  short_description: "Audit and repair the agent documentation structure of a project"

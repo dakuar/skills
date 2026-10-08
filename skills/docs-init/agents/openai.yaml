@@ -1,0 +1,3 @@
+interface:
+  display_name: "Docs Init"
+  short_description: "Create the standard agent documentation structure of a project"
