@@ -1,0 +1,3 @@
+interface:
+  display_name: "ETS-Review"
+  short_description: "Revisa un texto contra las reglas de Español Técnico Simplificado"

@@ -56,6 +56,13 @@ Después: "El módulo reintenta 3 veces cada petición fallida. Luego registra e
 Antes: "¡Listo! Ya quedó todo funcionando bastante mejor, hice varios ajustes en el formulario."
 Después: "Agregué validación de email en `RegisterForm.tsx`. Las 14 pruebas pasan."
 
+## Referencias
+
+Lee estos archivos cuando necesites más detalle. Están en la carpeta de este skill.
+
+- `references/examples.md`: un ejemplo antes y después por cada regla. Léelo cuando dudes de cómo aplicar una regla.
+- `references/vocabulary.md`: términos preferidos, suavizadores, relleno y adjetivos de calidad. Léelo antes de escribir o revisar un documento de más de una página.
+
 ## Documentación afectada por un cambio
 
 - Si un cambio de código invalida un documento existente, actualízalo en el mismo cambio.
@@ -65,3 +72,5 @@ Después: "Agregué validación de email en `RegisterForm.tsx`. Las 14 pruebas p
 ## Verificación
 
 Antes de entregar, revisa cada oración: longitud, agente explícito, adjetivos sin dato, términos duplicados.
+
+Para una revisión completa con informe de hallazgos, usa el skill `ets-review` si está instalado.

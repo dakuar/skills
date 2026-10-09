@@ -1,0 +1,44 @@
+{
+  "measured": null,
+  "method": "Sin medir. Para medir, entrega cada consulta a un agente con la lista completa de skills instalados y pregunta qué skill consulta primero. Una consulta con should=true pasa si el agente elige un skill de accept. Una consulta con should=false pasa si el agente no elige ningún skill de este plugin. Registra en targets la fecha, los aciertos y el total por skill.",
+  "targets": {},
+  "queries": [
+    { "id": "ed01", "should": true, "accept": ["ets-dev"], "q": "reescribe el README, está muy enredado y nadie entiende cómo instalar el proyecto" },
+    { "id": "ed02", "should": true, "accept": ["ets-dev"], "q": "escribe la documentación del endpoint de pagos en docs/api.md" },
+    { "id": "ed03", "should": true, "accept": ["ets-dev"], "q": "simplifica este párrafo, es demasiado largo y tiene muchas vueltas" },
+    { "id": "ed04", "should": true, "accept": ["ets-dev"], "q": "redacta el mensaje de commit para estos cambios" },
+    { "id": "ed05", "should": true, "accept": ["ets-dev"], "q": "agrega comentarios en español a las funciones de utils.ts" },
+    { "id": "ed06", "should": true, "accept": ["ets-dev", "docs-init"], "q": "actualiza AGENTS.md con la regla nueva sobre las migraciones" },
+    { "id": "ed07", "should": false, "q": "escribe un texto llamativo para la página de inicio, vendemos software de facturación" },
+    { "id": "ed08", "should": false, "q": "traduce este correo al inglés para un cliente" },
+    { "id": "ed09", "should": false, "q": "write the API reference for the orders service in English" },
+    { "id": "ed10", "should": false, "q": "escribe un poema corto para el cumpleaños de mi hermana" },
+
+    { "id": "er01", "should": true, "accept": ["ets-review"], "q": "revisa si este README cumple las reglas de ETS antes de publicarlo" },
+    { "id": "er02", "should": true, "accept": ["ets-review"], "q": "mi compañero escribió esta guía de despliegue, dale una última lectura y dime qué está mal redactado" },
+    { "id": "er03", "should": true, "accept": ["ets-review"], "q": "audita la redacción de docs/architecture.md, no cambies nada todavía" },
+    { "id": "er04", "should": true, "accept": ["ets-review"], "q": "¿este párrafo tiene oraciones demasiado largas o palabras vagas?" },
+    { "id": "er05", "should": true, "accept": ["ets-review", "ets-dev"], "q": "este documento suena muy rebuscado, dime por qué y cómo arreglarlo" },
+    { "id": "er06", "should": false, "q": "revisa este PR y busca bugs" },
+    { "id": "er07", "should": false, "q": "revisa mi currículum para una oferta de trabajo" },
+    { "id": "er08", "should": false, "q": "revisa si esta consulta SQL necesita un índice" },
+    { "id": "er09", "should": false, "q": "comprueba la ortografía de mi publicación de LinkedIn" },
+
+    { "id": "di01", "should": true, "accept": ["docs-init"], "q": "empiezo un proyecto nuevo con Vite, prepara la documentación para los agentes" },
+    { "id": "di02", "should": true, "accept": ["docs-init"], "q": "este repo no tiene AGENTS.md ni memoria del proyecto, créalos" },
+    { "id": "di03", "should": true, "accept": ["docs-init"], "q": "set up the standard docs structure for this project" },
+    { "id": "di04", "should": true, "accept": ["docs-init"], "q": "migra la documentación de este proyecto antiguo a la estructura estándar" },
+    { "id": "di05", "should": false, "q": "inicializa un repositorio de git y haz el primer commit" },
+    { "id": "di06", "should": false, "q": "crea un proyecto nuevo de React con Vite" },
+    { "id": "di07", "should": false, "q": "genera la documentación de la API con TypeDoc" },
+
+    { "id": "da01", "should": true, "accept": ["docs-audit"], "q": "MEMORY.md ya tiene 180 líneas, límpialo" },
+    { "id": "da02", "should": true, "accept": ["docs-audit"], "q": "audita la documentación del proyecto y dime qué punteros están rotos" },
+    { "id": "da03", "should": true, "accept": ["docs-audit"], "q": "moví muchas carpetas en el refactor, revisa que AGENTS.md y docs/ sigan apuntando bien" },
+    { "id": "da04", "should": true, "accept": ["docs-audit"], "q": "check whether any markdown file in this repo contains a credential" },
+    { "id": "da05", "should": true, "accept": ["docs-audit", "docs-init"], "q": "revisa si este proyecto cumple la estructura de documentación estándar" },
+    { "id": "da06", "should": false, "q": "audita las dependencias de npm y busca vulnerabilidades" },
+    { "id": "da07", "should": false, "q": "audita la accesibilidad de la página de registro" },
+    { "id": "da08", "should": false, "q": "reduce el tamaño del bundle de producción" }
+  ]
+}
