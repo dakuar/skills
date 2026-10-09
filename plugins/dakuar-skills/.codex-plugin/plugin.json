@@ -1,0 +1,37 @@
+{
+  "name": "dakuar-skills",
+  "description": "Skills para agentes de código: redacción técnica en Español Técnico Simplificado y estructura de documentación de proyectos.",
+  "version": "2.0.0",
+  "author": {
+    "name": "dakuar",
+    "url": "https://github.com/dakuar"
+  },
+  "homepage": "https://github.com/dakuar/skills",
+  "repository": "https://github.com/dakuar/skills",
+  "license": "MIT",
+  "keywords": [
+    "technical-writing",
+    "documentation",
+    "spanish",
+    "simplified-technical-spanish",
+    "agents-md",
+    "project-memory"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dakuar Skills",
+    "shortDescription": "Español Técnico Simplificado y estructura de documentación para agentes de código",
+    "developerName": "dakuar",
+    "category": "Writing",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Reescribe este README con las reglas de ets-dev.",
+      "Audita la documentación de este proyecto con docs-audit."
+    ],
+    "websiteURL": "https://github.com/dakuar/skills"
+  }
+}

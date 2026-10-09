@@ -1,2 +1,2 @@
-skills/**/*.md linguist-detectable
+plugins/**/*.md linguist-detectable
 README.md linguist-documentation

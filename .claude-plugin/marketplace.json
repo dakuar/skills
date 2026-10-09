@@ -7,8 +7,9 @@
   "plugins": [
     {
       "name": "dakuar-skills",
-      "source": "./",
-      "description": "Skills para agentes de código: redacción técnica en Español Técnico Simplificado y estructura de documentación de proyectos."
+      "source": "./plugins/dakuar-skills",
+      "description": "Skills para agentes de código: redacción técnica en Español Técnico Simplificado y estructura de documentación de proyectos.",
+      "category": "Writing"
     }
   ]
 }
