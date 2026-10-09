@@ -27,6 +27,14 @@ npx skills add dakuar/skills
 
 Este comando instala los skills. Para instalar también el agente y los comandos, usa el plugin de Claude Code.
 
+Para una instalación global, nombra los agentes de destino:
+
+```bash
+npx skills add dakuar/skills --global --agent claude-code cursor opencode zed
+```
+
+Sin `--agent`, el instalador intenta todos los agentes que conoce. PromptScript no admite la instalación global, y el instalador informa un fallo por cada skill.
+
 ## Plugin de Claude Code
 
 ```text
@@ -143,7 +151,7 @@ La carpeta `plugins/dakuar-skills/evals/` contiene dos archivos:
 - `trigger-evals.json`: 34 consultas de activación. Cada consulta indica si debe activar un skill y qué skills son una respuesta aceptada.
 - `evals.json`: 6 casos de comportamiento. Cada caso tiene un `prompt` y el resultado esperado.
 
-Estos evals no tienen resultados medidos. El campo `method` de `trigger-evals.json` describe cómo medir la activación.
+La activación se midió el 2026-10-09: 32 de 34 consultas pasan. El campo `method` de `trigger-evals.json` describe la medición, y el campo `targets` da el resultado y los fallos por skill. Los casos de `evals.json` no tienen resultados registrados.
 
 ## Cómo agregar un skill
 

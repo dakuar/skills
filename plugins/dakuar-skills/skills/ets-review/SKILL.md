@@ -90,6 +90,7 @@ Si el texto no tiene hallazgos, escribe `APROBADO: sin hallazgos.` e indica qué
 - Cita el fragmento exacto. Si el fragmento supera 15 palabras, corta con `[...]`.
 - Da el número de línea del archivo. Si revisas texto pegado en el chat, da el número de párrafo.
 - Propón una corrección para cada `ERROR` y cada `AVISO`.
+- Para la regla 7, propón el término de la lista de vocabulario de `ets-dev`. Si la lista no contiene el concepto, propón el término que el documento usa más veces.
 - No inventes un dato en una corrección. Si falta un dato, escribe `[dato pendiente: <qué falta>]`.
 - Conserva el significado del texto. Una corrección que agrega o elimina un hecho es un error del revisor.
 - No inventes hallazgos para alargar el informe.

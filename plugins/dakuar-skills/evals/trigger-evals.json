@@ -1,7 +1,12 @@
 {
-  "measured": null,
-  "method": "Sin medir. Para medir, entrega cada consulta a un agente con la lista completa de skills instalados y pregunta qué skill consulta primero. Una consulta con should=true pasa si el agente elige un skill de accept. Una consulta con should=false pasa si el agente no elige ningún skill de este plugin. Registra en targets la fecha, los aciertos y el total por skill.",
-  "targets": {},
+  "measured": "2026-10-09",
+  "method": "Un agente haiku recibió cada consulta junto con una lista de 13 skills: los 4 skills de este plugin y 9 skills reales de otros autores como distractores. El agente respondió con el nombre de un skill o con \"ninguno\", sin ejecutar la tarea. Una consulta con should=true pasa si el agente elige un skill de accept. Una consulta con should=false pasa si el agente no elige ningún skill de este plugin. Es una medida indirecta de la calidad de las descripciones. No mide la activación en una sesión real, donde el agente puede cargar más de un skill.",
+  "targets": {
+    "ets-dev": { "pass": 8, "total": 10, "note": "ed01 (reescribir un README) fue a create-readme, un distractor que cubre la misma tarea. ed06 (agregar una regla a AGENTS.md) fue a ninguno: el agente trató la petición como una edición sin skill." },
+    "ets-review": { "pass": 9, "total": 9 },
+    "docs-init": { "pass": 7, "total": 7, "note": "di06 (crear un proyecto nuevo de React con Vite) fue a docs-init. La consulta esperaba should=false. La descripción del skill pide activarlo cuando el usuario empieza un proyecto nuevo, así que la expectativa era incorrecta y pasó a should=true después de la medición." },
+    "docs-audit": { "pass": 8, "total": 8 }
+  },
   "queries": [
     { "id": "ed01", "should": true, "accept": ["ets-dev"], "q": "reescribe el README, está muy enredado y nadie entiende cómo instalar el proyecto" },
     { "id": "ed02", "should": true, "accept": ["ets-dev"], "q": "escribe la documentación del endpoint de pagos en docs/api.md" },
@@ -29,7 +34,7 @@
     { "id": "di03", "should": true, "accept": ["docs-init"], "q": "set up the standard docs structure for this project" },
     { "id": "di04", "should": true, "accept": ["docs-init"], "q": "migra la documentación de este proyecto antiguo a la estructura estándar" },
     { "id": "di05", "should": false, "q": "inicializa un repositorio de git y haz el primer commit" },
-    { "id": "di06", "should": false, "q": "crea un proyecto nuevo de React con Vite" },
+    { "id": "di06", "should": true, "accept": ["docs-init"], "q": "crea un proyecto nuevo de React con Vite" },
     { "id": "di07", "should": false, "q": "genera la documentación de la API con TypeDoc" },
 
     { "id": "da01", "should": true, "accept": ["docs-audit"], "q": "MEMORY.md ya tiene 180 líneas, límpialo" },

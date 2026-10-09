@@ -1,7 +1,7 @@
 {
   "name": "dakuar-skills",
   "description": "Skills para agentes de código: redacción y revisión técnica en Español Técnico Simplificado, y estructura de documentación de proyectos.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": {
     "name": "dakuar",
     "url": "https://github.com/dakuar"
